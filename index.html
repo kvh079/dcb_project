@@ -29,7 +29,7 @@
     <div 
       class="wrap"
     >
-      <header id="head" class="pt-5 pb-4">
+      <header id="head" class="pt-1 pb-1 pt-sm-5 pb-sm-4">
       <!--"p-5" 패딩 5px을 뜻 하며 상하좌우 모두에 적용, px-5는 x축(가로) 영역에 5px 패딩을, py-5는 y축(세로)에 5px 패딩 -->
       <!-- "pt"는 top, 상단에 패딩을 "pb"는 bottom, 하단에 패딩을 줌-->
       <nav  class="navbar navbar-expand-lg" >
@@ -54,7 +54,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a 
-                class="nav-link dropdown-toggle text-center" 
+                class="nav-link dropdown-toggle" 
                 href="#" 
                 role="button" 
                 data-bs-toggle="dropdown" 
@@ -290,18 +290,18 @@
         <section class="main2">
           <div class="container">
            <div class="row">
-              <div class="col">
+              <div class="col-12 col-sm-6">
                   <h4 class="main_title">NEWS <small>센터뉴스</small></h4>
                   <div class="row">
-                    <div class="col-5">
-                      <div class="bbs_img">
-                        <img src="./img/02_news.jpg" alt="게시물 제목">
+                    <div class="col-12 col-sm-5">
+                      <div class="bbs_img text-center">
+                        <img src="./img/02_news.jpg" alt="게시물 제목" class="img-fluid mobile-margin">
                         <p>
                           게시물제목
                         </p>
                       </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-sm-7">
                       <ul class="bbs_list list-unstyled">
                         <li><a href="#">2017 사회적기업가 육성사업</a></li>
                         <li><a href="#">2017 사회적기업가 육성사업</a></li>
@@ -312,7 +312,7 @@
                     </div>
                   </div>
               </div>
-              <div class="col">
+              <div class="col-12 col-sm-6">
                 <h4 class="main_title">Hot Issue  <small>핫이슈</small></h4>
                   <!-- 이슈 캐러셀 시작-->
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -336,15 +336,15 @@
         <section class="main3">
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col-12 col-sm-6">
                   <h4 class="main_title revers">Exhibition&Event <small>이달의 전시행사</small></h4>
                   <div class="row">
-                    <div class="col-4">
-                      <div class="poster">
+                    <div class="col-12 col-sm-4">
+                      <div class="poster text-center">
                         <img src="./img/03_poster.jpg" alt="포스터 이미지">
                       </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8">
                       <ul class="bbs_list list-unstyled">
                         <li>
                           <h4>
@@ -362,41 +362,49 @@
               <div class="col">
                 <h4 class="main_title revers">Quick link <small>빠른 바로가기</small></h4>
                     <div class="row text-center">
-                      <div class="col-3">
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                          <img src="./img/03_icon8.png" alt="dcb시설안내">
                         <p>DCB 시설안내</p>
                         </a>
+                      </div>
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                          <img src="./img/03_icon1.png" alt="채용안내">
                         <p>채용안내</p>
                         </a>
                       </div>
-                      <div class="col-3">
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                          <img src="./img/03_icon6.png" alt="대관신청">
                         <p>대관신청</p>
                         </a>
+                      </div>
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                          <img src="./img/03_icon5.png" alt="디자인정보지">
                         <p>디자인정보지</p>
                         </a>
                       </div>
-                      <div class="col-3">
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                           <img src="./img/03_icon7.png" alt="DCB 입주안내">
                         <p>DCB 입주안내</p>
                         </a>
+                      </div>
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                           <img src="./img/03_icon3.png" alt="시설문의">
                         <p>시설문의</p>
                         </a>
                       </div>
-                      <div class="col-3">
+                      <div class="col-4 col-sm-3 offset-2 offset-sm-0">
                         <a href="#" class="icon_link">
                          <img src="./img/03_icon2.png" alt="디자인자료실">
                         <p>디자인자료실</p>
                         </a>
+                        </div>
+                      <div class="col-4 col-sm-3">
                         <a href="#" class="icon_link">
                           <img src="./img/03_icon4.png" alt="고객지원">
                         <p>고객지원</p>
@@ -410,7 +418,7 @@
         <section class="main4">
           <div class="container">
             <div class="row">
-              <div class="col-3">
+              <div class="col-12 col-sm-3">
                 <h4 class="main_title">Design Issue <small>디자인 이슈</small></h4>
                 <div class="book">
                   <img src="./img/04_book_0001.jpg" alt="2013산업디자인통계조사">
@@ -421,7 +429,7 @@
                     </ul>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-12 col-sm-3">
                 <h4 class="main_title">Magazine <small>디자인정보지</small></h4>
                 <div class="book">
                   <img src="./img/04_book_0000.jpg" alt="디자인 손 책">
@@ -441,61 +449,62 @@
                     </ul>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-sm-6">
                   <h4 class="main_title">Hot Issue <small>핫이슈</small></h4>
                   <ul class="bbs_list list-unstyled">
                     <li>
                       <a href="#">
-                        <span>부산디자인센터 2층 전시실 용도변경 계획에 따른 공청회 개최</span>
-                        <span class="badge text-bg-primary">New</span></h6>
+                        <span class="ellipsis">부산디자인센터 2층 전시실 용도변경 계획에 따른 공청회 개최</span>
+                        <span class="badge text-bg-secondary"><i class="fa-solid fa-file"></i></span>
+                        <span class="badge text-bg-primary">New</span>
                         <span class="float-end">2017.03.04</span>
                       </a>
                    </li>
                       <li>
                         <a href="#">
-                          <span>[견적제출]부산디자인센터 사무기기 임차 단가계약 수정 공고</span>
-                          <span class="badge text-bg-secondary"><i class="fa-solid fa-file"></i></span></h6>
+                          <span class="ellipsis">[견적제출]부산디자인센터 사무기기 임차 단가계약 수정 공고</span>
+                          <span class="badge text-bg-secondary"></span>
                           <span class="float-end">2017.03.04</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <span>"2014 사회적 기업가 육성사업"" 매니저 채용 공고</span>
-                          <span class="badge text-bg-secondary"><i class="fa-solid fa-file"></i></span></h6>
+                          <span class="ellipsis">"2014 사회적 기업가 육성사업"" 매니저 채용 공고</span>
+                          <span class="badge text-bg-secondary"></span>
                           <span class="badge text-bg-success">진행중</span>
                           <span class="float-end">2017.03.04</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <span>2014 창의적 디자인체험프로그램 운영 전문강사 공개모집 재공고</span>
+                          <span class="ellipsis">2014 창의적 디자인체험프로그램 운영 전문강사 공개모집 재공고</span>
                           <span class="float-end">2017.02.27</span>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <span>부산디자인센터 사무기기 임차 단가계약 수정 공고 계획 안내</span>
+                          <span class="ellipsis">부산디자인센터 사무기기 임차 단가계약 수정 공고 계획 안내</span>
                           <span class="float-end">2017.02.26</span>
                         </a>
                       </li>
                   <h4 class="main_title_site">Family Site <small>관련 사이트</small></h4>
                     <div class="row site_list text-center">
-                      <div class="col-4">
+                      <div class="col-6 col-sm-4">
                         <a href="#" target="_blank"><img src="./img/04_site1.png" alt="패밀리사이트"></a>
                       </div>
-                      <div class="col-4">
+                      <div class="col-6 col-sm-4">
                         <a href="#" target="_blank"><img src="./img/04_site2.png" alt="패밀리사이트"></a>
                         </div>
-                      <div class="col-4">
+                      <div class="col-6 col-sm-4">
                         <a href="#" target="_blank"><img src="./img/04_site3.png" alt="패밀리사이트"></a>
                         </div>
-                      <div class="col-4">
+                      <div class="col-6 col-sm-4">
                         <a href="#" target="_blank"><img src="./img/04_site4.png" alt="패밀리사이트"></a>
                       </div>
-                      <div class="col-4">
+                      <div class="col-6 col-sm-4">
                         <a href="#" target="_blank"><img src="./img/04_site5.png" alt="패밀리사이트"></a>
                       </div>
-                      <div class="col-4">
+                      <div class="col-6 col-sm-4">
                         <a href="#" target="_blank"><img src="./img/04_site6.png" alt="패밀리사이트"></a>
                       </div>
                     </div>
@@ -542,31 +551,37 @@
         <div class="foot_copy">
           <div class="container">
             <div class="row">
-              <div class="col-3">
-                <img src="./img/dcb_logo_foot.png" alt="부산디자인진흥원">
+              <div class="col-12 col-sm-3">
+                <img src="./img/dcb_logo_foot.png" alt="부산디자인진흥원" class="my-3 my-sm-0">
               </div>
-              <div class="col-7">
+              <div class="col-12 col-sm-7">
                 <p>
-                  [612-020] 부산광역시 해운대구 센텀동로 57 (우동 1457번지)<br>
-                  대표전화 : 051-790-1000 | 팩스 : 051-790-1099 | email : webmaster@dcb.or.kr<br>
+                  [612-020] 부산광역시 해운대구 센텀동로 57 <br class="d-sm-none">(우동 1457번지)<br>
+                  대표전화 : 051-790-1000 
+                  <a href="tel:051-790-1000" class="btn btn-outline-secondary d-sm-none btn-sm">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                  <span class="d-none d-sm-inline">|</span><br class="d-sm-none"> 
+                  팩스 : 051-790-1099 <span class="d-none d-sm-inline">|</span><br class="d-sm-none"> 
+                  email : webmaster@dcb.or.kr<br>
                 </p>
                 <p>
                   copyright © 2008-2014 By DESIGN CENTER BUSAN. All rights reserved
                 </p>
               </div>
-              <div class="col-2">
+              <div class="col-12 col-sm-2">
                 <dl class="row">
-                  <dt class="col-sm-3">
+                  <dt class="col-3 col-sm-3">
                     <a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
                   </dt>
-                  <dd class="col-sm-9">
+                  <dd class="col-3 col-sm-9">
                     follow us<br>
                     8602
                   </dd>
-                  <dt class="col-sm-3">
+                  <dt class="col-3 col-sm-3">
                     <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
                   </dt>
-                  <dd class="col-sm-9">
+                  <dd class="col-3 col-sm-9">
                     follow us<br>
                     8602
                   </dd>

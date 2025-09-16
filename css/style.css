@@ -28,7 +28,7 @@ input, select, textarea {font-size: 18px; border-color: #ccc; border-radius: 5px
 
 /*메인 스타일 관련*/
 #main_img .carousel-control-prev,
-#main_img img {height: 400px; width: 100%; object-fit: fill;}
+#main_img img {height: auto; width: 100%; object-fit: fill;}
 
 .main1{
     background-image: url(../img/01_bg.png); 
@@ -57,6 +57,7 @@ input, select, textarea {font-size: 18px; border-color: #ccc; border-radius: 5px
 .main3 a {color: #fff;}
 .main3 a:hover{color: #E2383F;}
 .poster {
+    position: relative;
     padding: 27px; 
     background-image: url(../img/03_poster_bg.jpg);
     background-size: 100%;
@@ -74,7 +75,7 @@ input, select, textarea {font-size: 18px; border-color: #ccc; border-radius: 5px
 /* 캐러셀 컨테이너는 위치 기준점이 되어야 함 */
 #main_img {
   position: relative;
-  height: 400px; /* 원하는 높이 */
+  height:auto; /* 원하는 높이 */
   overflow: hidden;
 }
 
@@ -124,17 +125,15 @@ input, select, textarea {font-size: 18px; border-color: #ccc; border-radius: 5px
 .main_title_site small {font-size: 14px; color: #E2383F; }
 .main_title.revers small {color: #fff;}
 .main2, .main3, .main4 {padding: 30px ;}
-.icon_link p {margin: 3px 0;}
+.icon_link p {margin: 6px 0;}
 .icon_link img {height: 70px; width: auto;}
 
 .book img {width: 180px; margin: 10px; box-shadow:5px 5px 10px #9c9c9c;}
 
 
-
-
 /*게시판 스타일 관련*/
-.bbs_img{border-radius: 50px; position: relative;}
 .bbs_img > img {border-radius: 20px;}
+.bbs_img{ border-radius: 50px; position: relative;}
 /* .bbs_img 태그 다음에 오는 img태그에만 적용*/
 .bbs_img p {
     background-color: rgba(0, 0, 0, 75); 
@@ -145,7 +144,15 @@ input, select, textarea {font-size: 18px; border-color: #ccc; border-radius: 5px
     margin: 0; 
     padding: 10px 5px; 
     text-align: center; 
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 25px 25px;
+}
+
+/* 모바일 전용 마진 */
+@media (max-width: 576px) {
+  .mobile-img {
+    display: block;               /* 이미지를 block 요소로 바꿈 */
+    margin: 10px auto;            /* 상하 10px, 좌우 auto = 중앙 정렬 */
+  }
 }
 
 .bbs_list > li { 
@@ -214,3 +221,48 @@ input, select, textarea {font-size: 18px; border-color: #ccc; border-radius: 5px
 .foot_copy {border-top: solid 2px #7c7c7c; padding: 1rem 0 0 0;}
 .foot_copy p {font-size: 10px; text-align: left;}
 .foot_copy dd {font-size: 12px; text-align: left;}
+
+/*미디어 쿼리(화면 가로 사이즈에 따른 사이즈 설정)*/
+@media (max-width: 576px) {  
+    #head{padding: 0; border-bottom: 10px solid #e2383f; }
+    #head .navbar-brand img {width: 180px;}
+    #navi >ul >li {border-bottom: 1px solid #ccc;}
+    #navi .dropdown-toggle::after {display: none;}
+    .main2 .bbs_img {width: 240px; margin: 0 auto;}
+    .main3 .poster {width: 200px; margin: 0 auto;}
+    .site_list > div {border-right:#ccc 1px solid; margin:10px 0 5px 0}
+    .site_list > div:nth-child(3n) {border-right: #ccc 1px solid;}
+    .site_list >div:nth-child(2n) {border:none}
+    .foot_copy img {width: 90px;}
+    .foot_copy dd {font-size: 12px; }
+    .foot_copy p {font-size: 12px; text-align: center;}
+    .foot_link a {font-size: 12px;}
+    .carousel-control-prev, .carousel-control-next {top: 15%;}
+    .fa-solid {font-size: 30px;}
+    .carousel-indicators {margin-bottom: 0;}
+    .main3 {background-size: 0, auto;}
+    .main4 .book > img {width: 30%;}
+    .main4 {background-size: 500% auto; background-color: #e7e7e7;}
+    .main4 .ellipsis {
+        display: inline-block;     /* 필요 시 block 또는 inline-block으로 설정 */
+        max-width: 50%;           /* 부모 안에서 제한된 너비 */
+        white-space: nowrap;       /* 줄바꿈 방지 */
+        overflow: hidden;          /* 넘치는 텍스트 숨김 */
+        text-overflow: ellipsis;   /* 말줄임(...) 처리 */
+        }
+    .fa-phone {font-size: 10px;}
+    .fa-file {font-size: 10px;}
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {  }
